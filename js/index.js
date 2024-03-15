@@ -143,6 +143,18 @@ function select(){
             document.getElementsByName(select_char)[0].checked = false;
             select_box.splice(select_num, 1);
         }
+
+        if(select_box.length < 8){
+            select_member_clear();
+            for(var i = 0; 0 < select_box.length; i++){
+                var select_num = Math.floor(Math.random() *(select_box.length));
+                var select_char = select_box[select_num];
+                var getindex = search_index(select_char);
+                document.getElementById('icon' + i).innerHTML = "<img src='./image/char_icon/" + getindex[1] + "/" + getindex[0] + ".png'>";
+                document.getElementsByName(select_char)[0].checked = false;
+                select_box.splice(select_num, 1);
+            }
+        }
     }else if(select_box.length <= 8){
         for(var i = 0; 0 < select_box.length; i++){
             var select_num = Math.floor(Math.random() *(select_box.length));
