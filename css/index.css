@@ -1,0 +1,98 @@
+/* 全体設定 */
+body{
+    background-color: #426579; /*背景色設定*/
+    color:white;/*文字色設定*/
+}
+
+/* heder title */
+#header_title{
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+/* select member */
+.select_member{
+    margin-top:50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+div.select_member_icon{
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    border: solid 1px #999999;
+    background-color: rgba(0,0,0,0.3);
+}
+
+div#icon_box1{
+    text-align: center;
+}
+
+div#icon_box2{
+    text-align: center;
+}
+
+/* button */
+button.button {
+    display: inline-block;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 150px; /* ボタン幅 */
+    color: #4D9BC1; /* 文字色 */
+    border: 2px solid #00ff7f; /* 線幅・種類・色 */
+    background: #fff; /* 背景色 */
+    padding: 1em 2em;
+    font-weight: bold; /* 文字の太さ */
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  /* マウスオーバーした際のデザイン */
+  button#select:hover {
+    color: #fff; /* 文字色 */
+    background: #00ff7f; /* 背景色 */
+  }
+
+/* マウスオーバーした際のデザイン */
+button#reset:hover {
+    color: #fff; /* 文字色 */
+    background: #b22222; /* 背景色 */
+}
+
+/* マウスオーバーした際のデザイン */
+button#all_active:hover {
+    color: #fff; /* 文字色 */
+    background: #9acd32; /* 背景色 */
+}
+
+/* マウスオーバーした際のデザイン */
+button#select_member_clear:hover {
+    color: #fff; /* 文字色 */
+    background: #9932cc; /* 背景色 */
+}
+
+
+/* キャラクター一覧 */
+#character_list{
+    margin-top: 75px;
+    text-align: center;
+}
+
+label {
+    cursor: pointer;
+}
+
+label img {
+    background-color: #000;
+    filter: grayscale(100%);
+    margin-right: 2.5px;
+}
+
+input:checked + img {
+    outline: 2px solid yellow;
+    background-color: #000;
+    filter: grayscale(0%);
+}

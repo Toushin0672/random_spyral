@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Random-Spiral</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <script type="text/javascript" defer src="./js/index.js"></script>
+    </head>
+
+    <body>
+        <P id="header_title">Random - Spiral</P>
+
+        <!-- 第一パーティ -->
+        <p class="select_member">- 1st -</p>
+        <div id="icon_box1">
+            <div class="select_member_icon" id="icon0">
+                
+            </div>
+            <div class="select_member_icon" id="icon1">
+                
+            </div>
+            <div class="select_member_icon" id="icon2">
+                
+            </div>
+            <div class="select_member_icon" id="icon3">
+                
+            </div>
+        </div>
+
+        <!-- 第二パーティ -->
+        <p class="select_member">- 2nd -</p>
+        <div id="icon_box2">
+            <div class="select_member_icon" id="icon4">
+                
+            </div>
+            <div class="select_member_icon" id="icon5">
+                
+            </div>
+            <div class="select_member_icon" id="icon6">
+                
+            </div>
+            <div class="select_member_icon" id="icon7">
+                
+            </div>
+
+            <!-- 機能ボタン -->
+            <br>
+            <button class="button" id="select" type="button" onclick="select()">抽選</button>
+            <button class="button" id="reset" type="button" onclick="all_select('false')">全選択解除</button>
+            <button class="button" id="all_active" type="button" onclick="all_select('true')">全選択</button>
+            <button class="button" id="select_member_clear" type="button" onclick="select_member_clear()">選出クリア</button>
+        </div>
+
+        <!-- キャラクター一覧 -->
+        <div id="character_list"></div>
+    </body>
+</html>
