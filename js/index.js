@@ -24,6 +24,9 @@ for(var i=0; i < ALL_CHAR.length; i++){
             break;
         case '5':
             back_color = '#B18A42';
+            if(ALL_CHAR[i]['Name'] == 'aloy'){
+                back_color ='##922D38';
+            }
             break;
     }
     image.setAttribute('style', 'background-color: ' + back_color + ';');
