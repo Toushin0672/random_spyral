@@ -25,7 +25,7 @@ for(var i=0; i < ALL_CHAR.length; i++){
         case '5':
             back_color = '#B18A42';
             if(ALL_CHAR[i]['Name'] == 'aloy'){
-                back_color ='##922D38';
+                back_color ='#922D38';
             }
             break;
     }
