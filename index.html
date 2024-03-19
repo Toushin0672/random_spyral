@@ -4,10 +4,63 @@
         <meta charset="utf-8">
         <title>Random-Spiral</title>
         <link rel="stylesheet" href="./css/index.css">
+        <script type="text/javascript" defer src="./js/char_database.js"></script>
         <script type="text/javascript" defer src="./js/index.js"></script>
     </head>
 
     <body>
+        <header>
+            <div class="header-area">
+              <div class="hamburger">
+                <!-- ハンバーガーメニューの線 -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- /ハンバーガーメニューの線 -->
+              </div>
+            </div>
+            <div class="slide-menu">
+                <div id="element">
+                    <p>選択 -元素- ※主人公は除外</p>
+                    <button class="select_element" id="select_elemet_wind" type="button" onclick="char_select_active('wind', 1)">風キャラ</button>
+                    <button class="select_element" id="select_elemet_stone" type="button" onclick="char_select_active('stone', 1)">岩キャラ</button>
+                    <button class="select_element" id="select_elemet_thunder" type="button" onclick="char_select_active('thunder', 1)">雷キャラ</button>
+                    <button class="select_element" id="select_elemet_grass" type="button" onclick="char_select_active('grass', 1)">草キャラ</button>
+                    <button class="select_element" id="select_elemet_water" type="button" onclick="char_select_active('water', 1)">水キャラ</button>
+                    <button class="select_element" id="select_elemet_fire" type="button" onclick="char_select_active('fire', 1)">炎キャラ</button>
+                    <button class="select_element" id="select_elemet_ice" type="button" onclick="char_select_active('ice', 1)">氷キャラ</button>
+                </div>
+                <div id="wepon">
+                    <p>選択 -武器種-</p>
+                    <button class="select_element" id="select_wepon_sword" type="button" onclick="char_select_active('sword', 2)">片手剣キャラ</button>
+                    <button class="select_element" id="select_wepon_largesword" type="button" onclick="char_select_active('largesword', 2)">両手剣キャラ</button>
+                    <button class="select_element" id="select_wepon_bow" type="button" onclick="char_select_active('bow', 2)">弓キャラ</button>
+                    <button class="select_element" id="select_wepon_spear" type="button" onclick="char_select_active('spear', 2)">長柄キャラ</button>
+                    <button class="select_element" id="select_wepon_magic" type="button" onclick="char_select_active('magic', 2)">法器キャラ</button>
+                </div>
+                <div id="country">
+                    <p>選択 -国(登場国 ※主人公とアーロイのみその他)-</p>
+                    <button class="select_element" id="select_country_mondo" type="button" onclick="char_select_active('1mondo', 3)">モンド</button>
+                    <button class="select_element" id="select_country_riyue" type="button" onclick="char_select_active('2ri-yue', 3)">リーユエ</button>
+                    <button class="select_element" id="select_country_inazuma" type="button" onclick="char_select_active('3inazuma', 3)">稲妻</button>
+                    <button class="select_element" id="select_country_su-meru" type="button" onclick="char_select_active('4sume-ru', 3)">スメール</button>
+                    <button class="select_element" id="select_country_fonte-nu" type="button" onclick="char_select_active('5fonte-nu', 3)">フォンテーヌ</button>
+                    <button class="select_element" id="select_country_other" type="button" onclick="char_select_active('6other', 3)">その他</button>
+                </div>
+                <div id="rarity">
+                    <p>選択 -レアリティ-</p>
+                    <button class="select_element" id="select_rarity_5" type="button" onclick="char_select_active(5, 4)">星5</button>
+                    <button class="select_element" id="select_rarity_4" type="button" onclick="char_select_active(4, 4)">星4</button>
+                </div>
+                <div id="rarity">
+                    <p>選択 -性別-</p>
+                    <button class="select_element" id="select_rarity_man" type="button" onclick="char_select_active('man', 5)">男性</button>
+                    <button class="select_element" id="select_rarity_woman" type="button" onclick="char_select_active('woman', 5)">女性</button>
+                </div>
+                
+            </div>
+          </header>
+
         <P id="header_title">Random - Spiral</P>
 
         <!-- 第一パーティ -->
@@ -45,9 +98,9 @@
 
             <!-- 機能ボタン -->
             <br>
-            <button class="button" id="select" type="button" onclick="select()">抽選</button>
-            <button class="button" id="reset" type="button" onclick="all_select('false')">全選択解除</button>
-            <button class="button" id="all_active" type="button" onclick="all_select('true')">全選択</button>
+            <button class="button" id="select" type="button" onclick="char_drow()">抽選</button>
+            <button class="button" id="reset" type="button" onclick="char_select_active('false', 0)">全選択解除</button>
+            <button class="button" id="all_active" type="button" onclick="char_select_active('true', 0)">全選択</button>
             <button class="button" id="select_member_clear" type="button" onclick="select_member_clear()">選出クリア</button>
         </div>
 

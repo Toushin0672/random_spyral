@@ -1,7 +1,10 @@
+@charset "utf-8";
+
 /* 全体設定 */
 body{
     background-color: #426579; /*背景色設定*/
     color:white;/*文字色設定*/
+    overflow-x: hidden;/* 追記 */
 }
 
 /* heder title */
@@ -74,6 +77,31 @@ button#select_member_clear:hover {
     background: #9932cc; /* 背景色 */
 }
 
+button.select_element{
+    display: inline-block;
+    width: 100%;
+    max-width: 150px; /* ボタン幅 */
+    color: #4D9BC1; /* 文字色 */
+    border: 2px solid #00ff7f; /* 線幅・種類・色 */
+    background: #fff; /* 背景色 */
+    padding: 1em 2em;
+    font-weight: bold; /* 文字の太さ */
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+button.select_element:hover{
+    color: #fff; /* 文字色 */
+    background: #00ff7f; /* 背景色 */
+}
+
+.slide-menu p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+}
 
 /* キャラクター一覧 */
 #character_list{
@@ -97,7 +125,71 @@ input:checked + img {
     filter: grayscale(0%);
 }
 
+
 /* 説明文 */
 .explanation{
     text-align: center;
 }
+
+/* ハンバーガーメニュー */
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .hamburger{
+    width: 40px;
+    height: 25px;
+    position: relative;
+    position: fixed;
+    top: 65px;
+    z-index: 1000000;
+  }
+  .hamburger span{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: blue;
+    transition: .5s;
+  }
+  .hamburger span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+    top: 0;
+  }
+  .hamburger span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+    top: 50%;
+  }
+  .hamburger span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+    top: 100%;
+  }
+  .slide-menu{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 125px;
+    width: 100%;
+    left: 0;
+    transform: translateX(-100%);
+    transition: .5s;
+    z-index: 1000000;
+  }
+  .slide-menu {
+    color: #fff;
+    line-height: 400%;
+    text-align: center;
+  }
+  
+  .hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .hamburger.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+    opacity: 0;/* 透明にする */
+  }
+  .hamburger.active span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .slide-menu.active{
+    transform: translateX(0); 
+  }
