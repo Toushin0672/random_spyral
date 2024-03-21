@@ -167,7 +167,6 @@ input:checked + img {
     position: fixed;
     top: 125px;
     width: 100%;
-    height: 75%;
     left: 0;
     transform: translateX(-100%);
     transition: .5s;
@@ -178,6 +177,9 @@ input:checked + img {
     line-height: 400%;
     text-align: center;
   }
+.slide-menu p{
+height: 60%;
+}
   
   .hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
     top: 50%;
