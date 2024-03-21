@@ -167,6 +167,7 @@ input:checked + img {
     position: fixed;
     top: 125px;
     width: 100%;
+    height: 75%;
     left: 0;
     transform: translateX(-100%);
     transition: .5s;
