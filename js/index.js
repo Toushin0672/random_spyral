@@ -135,7 +135,8 @@ function char_drow(){
         alert('キャラクターを選択してください。');
     }
 
-    for(var i=0; i < 8; i++){
+    var member_num = document.getElementById('member_num').value;
+    for(var i=0; i < member_num; i++){
         if(select_box.length != 0){
             var select_num = Math.floor(Math.random() *(select_box.length));
             var select_char = select_box[select_num];
