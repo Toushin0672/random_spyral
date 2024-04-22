@@ -639,5 +639,13 @@ char_database =
         "Element": "ice",
         "Weapon": "bow",
         "Sex": "woman"
+    },
+    {
+        "Name": "meshitukai",
+        "Country": "5fonte-nu",
+        "Rarity": "5",
+        "Element": "fire",
+        "Weapon": "spear",
+        "Sex": "woman"
     }
 ]
