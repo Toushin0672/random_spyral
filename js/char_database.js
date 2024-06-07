@@ -647,5 +647,21 @@ char_database =
         "Element": "fire",
         "Weapon": "spear",
         "Sex": "woman"
-    }
+    },
+    {
+        "Name": "setosu",
+        "Country": "4sume-ru",
+        "Rarity": "4",
+        "Element": "thunder",
+        "Weapon": "bow",
+        "Sex": "man"
+    },
+    {
+        "Name": "kurorinde",
+        "Country": "5fonte-nu",
+        "Rarity": "5",
+        "Element": "thunder",
+        "Weapon": "sword",
+        "Sex": "woman"
+    },
 ]
