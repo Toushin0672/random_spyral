@@ -664,4 +664,20 @@ char_database =
         "Weapon": "sword",
         "Sex": "woman"
     },
+    {
+        "Name": "shiguwin",
+        "Country": "5fonte-nu",
+        "Rarity": "5",
+        "Element": "water",
+        "Weapon": "bow",
+        "Sex": "woman"
+    },
+    {
+        "Name": "emire",
+        "Country": "5fonte-nu",
+        "Rarity": "5",
+        "Element": "grass",
+        "Weapon": "spear",
+        "Sex": "woman"
+    },
 ]
